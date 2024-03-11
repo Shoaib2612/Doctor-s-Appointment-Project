@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login</title> 
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <form action = "http://localhost:5000/userlogin" method = "post"> 
+    <div style="margin: 80px 550px;">
+        <h2>User Login</h2> 
+        <table >  
+            <tr>
+                <td>Name</td>  
+                <td><input type ="text" name ="username" autocomplete="off" ></td>
+            </tr>  
+            <tr>
+                <td>Password</td>  
+                <td><input type ="password" name ="pass" autocomplete="off"></td>
+            </tr>  
+            <tr>
+                <td><input type = "submit" style="background-color: deepskyblue;"></td>
+            </tr>  
+        </table>
+        <a href="/register">Not a member? Register here</a>
+    </div>  
+   </form>  
+</body>
+
+</html>

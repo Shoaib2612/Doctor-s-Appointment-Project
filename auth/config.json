@@ -1,0 +1,15 @@
+{
+  "host": "8eaa36fa-f6f8-4820-aee2-29b1a4ebd185-us-east1.apps.astra.datastax.com",
+  "port": 32512,
+  "keyspace": "Student",
+  "localDC": "dc-1",
+  "caCertLocation": "./ca.crt",
+  "keyLocation": "./key",
+  "certLocation": "./cert",
+  "keyStoreLocation": "./identity.jks",
+  "keyStorePassword": "C2dUx61yertVB87WG",
+  "trustStoreLocation": "./trustStore.jks",
+  "trustStorePassword": "4jK1S3NAOeC5E8MVo",
+  "csvLocation": "./data",
+  "pfxCertPassword": "m6fx7RG5vQhowb8Z1"
+}

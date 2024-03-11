@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title> 
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+</head>
+<body class="m-5">
+    <form method = "post" action="/appointup">
+        <table>
+            <tr><td>Patient Name</td><td><input type="text" name="patient_name" ></td></tr></br>
+            <label for="doc">Doctor Name</label>
+                    <select name="doctor_name" id="doc" >
+                        <option selected>---Select Doctor---</option>
+                        <option>Dr.Shetty</option>
+                        <option>Dr.Prakash</option>
+                        <option>Dr.Reddy</option>
+                        <option>Dr.Arjun</option>
+                    </select></br>
+             <label for="spc">Specialization</label>
+                    <select name="specialization" id="spc" >
+                        <option selected>---Select Specialization ---</option>
+                        <option>Pulmonology</option>
+                        <option>Psycology</option>
+                        <option>Cardiology</option>
+                        <option>Orthopaedics</option>
+                    </select></br>        
+            <tr><td>Appointment Date</td><td><input type="date" name="date"></td></tr></br>
+            <label for="time"> Appointment Time</label>
+                    <select name="time" id="time" >
+                        <option selected>---Select Time---</option>
+                        <option >10:00-10:20</option>
+                        <option >10:30-10:45</option>
+                        <option >10:45-11:00</option>
+                        <option>11:00-11:15</option>
+                        <option>11:30-11:45</option>
+                        <option>11:45-12:00</option>
+                    </select>
+            <tr><td><input type="submit" value="Update"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
