@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospital</title> 
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+   
+ <style  type="text/css">
+  .img1 .text{
+     position: absolute;
+     text-align: center;
+     top:72%;
+     left:32%;
+     color:black;
+     z-index: 2;
+ 
+ }
+ .img1 .text p
+ {
+     font-size: 30px;
+     color: green;
+ }
+
+ #about .fa-check {
+    color: #fff;
+    background: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+#menu a{
+    border-radius: 10px;
+    padding: 10px;
+}  
+#menu a:hover{
+    background-color: cornflowerblue;
+    transition: 0.3s;
+    box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.213);
+    color: white;
+}
+#login .fa-user-secret{
+    margin-left: 350px;
+}
+
+#login button{
+    margin-left: 350px;
+    margin-top: 5px;
+    
+}
+#login .fa-user {
+    margin-left: 320px;
+}
+form{
+    display: inline;
+}
+ </style>
+
+</head>
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top" id="mainNavbar">
+      <div class="container">
+        <a href="#" class="navbar-brand">Apollo Hospital</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#head" class="nav-link text-white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-white">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link text-white">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#login" class="nav-link text-white">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <!-- navbar ends  -->
+
+    <!-- head -->
+    <section id="head">
+        <div class="img1">
+            <div class="overlay"></div>
+            <img src="https://blog.ipleaders.in/wp-content/uploads/2018/02/BV-Acharya-3.jpg" width="100%" height="600px" />
+            <div class="text">
+               <p>"DR." isn't just my prefix it's my super power </p>
+            </div>
+        </div>
+    </section>
+    <!-- head -->
+
+    <!-- login -->
+    <section id="login" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col py-3">
+            <h2 class="display-5 text-center text-white">Login</h2>
+            <p><i class="fa fa-user-secret fa-6x" aria-hidden="true"></i>
+            <i class="fa fa-user fa-6x " style="display: inline;" aria-hidden="true"></i></p>
+            <form action="/login" method = "GET"><button class="btn btn-outline-light" style="display:inline-block;">Admin</button></form>
+          
+            <form action="/userlogin" method = "GET"><button class="btn btn-outline-light shft" style="display:inline-block;">User</button></form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- login ends -->
+
+
+    <!-- About us session -->
+    <section id="about" class="bg-light text-muted py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://www.mcmc.net/images/blog/nurse.jpg" alt="image of doctor"
+                class="img-fluid rounded-circle pt-5" >
+            </div>
+            <div class="col-md-6">
+              <h2 style="color:blue">About Us</h2>
+              <h4>Why People Choose Our Hospital?</h4>
+              <p>We provide the best service all over the country,People chose our hospital because of the following advantages</p>
+              <div class="d-flex">
+                <i class="fas fa-check fa-2x my-auto"></i>
+                <p class="p-4">We have a list of associated doctors.Every Department Specialists are availability,Available ambulance facilities,OT/ICU,trauma care is best as always,Our pharmacy is opened 24/7,Our cost is affordable.</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About us session -->
+
+      <!-- footer -->
+      <footer id="footer" class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col  text-white py-4">
+              <h3 class="text-center">Contact Us</h3>
+                <h5>Contact us and we will get back to you within 24 hours.</h5>
+                <p><i class="fa fa-map-marker bg-dark" aria-hidden="true"></i>
+                Bangalore,India.</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>+91 855 855 855</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> admin@gmail.com</p>
+              <p class="text-center">Copyright &copy; <span >2020</span></p>
+           
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+</body>
+</html>

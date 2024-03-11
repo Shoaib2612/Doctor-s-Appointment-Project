@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialization</title> 
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+</head>
+<body class="m-5">
+    <form method = "post" action="/upd">
+        <table>
+            <tr><td>Doctor ID</td><td><input type="number" name="doc_id"></td></tr>
+            <tr><td>Doctor Name</td><td><input type="text" name="doc_name"></td></tr>
+            <tr><td>Specialization</td><td><input type="text" name="spc"></td></tr>
+            <tr><td>Fee</td><td><input type="number" name="fee"></td></tr>
+            <tr><td><input type="submit" value="Update Data"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

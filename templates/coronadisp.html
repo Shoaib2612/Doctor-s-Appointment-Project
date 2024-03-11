@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+        <table border>
+            <caption>Corona Information</caption>
+            <tr>
+
+                <th>ID</th>
+                <th>District</th>
+                <th>Active cases</th>
+                <th>Recovered</th>
+                <th>Deaths</th>
+            </tr>
+            {% for row in r %}
+            <tr>
+                {% for col in row %}
+                <td>{{col}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+        <table border>
+            <caption>Theatre Information</caption>
+            <tr>
+
+                <th>Theatre ID</th>
+                <th>Number of Seats</th>
+                <th>Seats Type</th>
+                <th>Year</th>
+            </tr>
+            {% for row in r %}
+            <tr>
+                {% for col in row %}
+                <td>{{col}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    
+</body>
+</html>

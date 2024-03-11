@@ -1,0 +1,33 @@
+<html>  
+   <body>  
+       <h3 style="color: rgb(241, 13, 13);">Canteen Order</h3>  
+      <form action = "http://localhost:5000/orderdetail" method = "POST">  
+           
+         <p style="color: blue;">USN <input type = "text" name = "usn" required></p> 
+         <p style="color: blue;">Items:</p>
+            <div>
+                <input type="checkbox" id="item" name="item">
+                <label for="item">Idli Vada</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="item" name="item">
+                <label for="item">Masala Dosa</label>
+            </div>
+            <div>
+                <input type="checkbox" id="item" name="item">
+                <label for="item">Palav</label>
+            </div>
+            <div>
+                <input type="checkbox" id="item" name="item">
+                <label for="item">Poori</label>
+            </div>
+            <div>
+                <input type="checkbox" id="item" name="item">
+                <label for="item">Meals</label>
+            </div>
+         <p style="color: blue;">Delivery Time <input type = "time" name = "time" required></p>
+         <p><input type = "submit" value = "submit" style="background-color: aqua;"></p>  
+      </form>  
+   </body>  
+</html>  
